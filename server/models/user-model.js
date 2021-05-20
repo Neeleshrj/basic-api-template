@@ -68,12 +68,7 @@ function validateUser(user) {
             .email(),
         pnumber: Joi
             .number()
-            .required(),
-        // password: Joi
-        //     .string()
-        //     .min(5)
-        //     .max(255)
-        //     .required(),
+            .required()
     });
     
     return schema.validate(user);
